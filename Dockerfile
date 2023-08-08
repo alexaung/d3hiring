@@ -19,8 +19,8 @@ COPY . .
 # Generate Prisma client for this environment
 RUN npx prisma generate
  
-# Expose port 8080 for the app
-EXPOSE 8080
+# Expose port 3000 for the app
+EXPOSE 3000
 
 # Run the app when the container launches
 CMD [ "npm", "start" ]
