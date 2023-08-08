@@ -9,6 +9,7 @@ API server powered by Node.js, TypeScript, Prisma, and MySQL, designed for the D
   - [Using Docker](#using-docker)
   - [Locally Without Docker](#locally-without-docker)
 - [Running the Server](#running-the-server)
+- [Deploying to Google Cloud Run](#deploying-to-google-cloud-run)
 - [Running Tests](#running-tests)
 - [Hosted API](#hosted-api)
 - [API Documentation](#api-documentation)
@@ -28,7 +29,7 @@ Ensure you have the following installed on your system:
 
 ### Using Docker
 
-1. **AClone the Repository:**
+1. **Clone the Repository:**
    
    ```bash
     git clone https://github.com/alexaung/d3hiring.git
