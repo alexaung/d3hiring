@@ -102,6 +102,7 @@ Before you begin, make sure you have the following:
 - A Google Cloud Platform (GCP) account
 - Docker installed on your local machine
 - Google Cloud SDK (`gcloud`) installed on your local machine
+- Necessary database configurations and credentials for Cloud SQL.
 
 ### Deployment Steps
 
