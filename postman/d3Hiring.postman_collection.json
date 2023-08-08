@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "33fbfc8a-281d-40f2-a945-425b2d077b97",
+		"name": "d3Hiring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "90097"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"teacher\": \"teacherken@gmail.com\",\n  \"students\":\n    [\n      \"studentjon@gmail.com\",\n      \"studenthon@gmail.com\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}api/register",
+					"host": [
+						"{{URL}}api"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commonstudents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}api/commonstudents?teacher=teacherken%40gmail.com",
+					"host": [
+						"{{URL}}api"
+					],
+					"path": [
+						"commonstudents"
+					],
+					"query": [
+						{
+							"key": "teacher",
+							"value": "teacherken%40gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "suspend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"student\" : \"nonexistentstudent@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}api/suspend",
+					"host": [
+						"{{URL}}api"
+					],
+					"path": [
+						"suspend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrievefornotifications",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"teacher\":  \"teacherken@gmail.com\",\n  \"notification\": \"Hello students! @studentagnes@gmail.com @studentmiche@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}api/retrievefornotifications",
+					"host": [
+						"{{URL}}api"
+					],
+					"path": [
+						"retrievefornotifications"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
