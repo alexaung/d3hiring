@@ -1,0 +1,27 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["linux-musl-openssl-3.0.x", "darwin"]
+}
+
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Student {
+  id           Int            @id @default(autoincrement())
+  email        String         @unique
+  suspended    Boolean        @default(false)
+  teachers     Teacher[]
+}
+
+model Teacher {
+  id             Int            @id @default(autoincrement())
+  email          String         @unique
+  students       Student[]
+}
+

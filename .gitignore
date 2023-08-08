@@ -1,0 +1,35 @@
+# Ignore Node.js build files
+node_modules/
+
+# Ignore TypeScript build artifacts
+/dist/
+*.tsbuildinfo
+
+# Ignore Prisma artifacts
+/prisma/client/
+
+# Ignore editor-specific files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.idea/
+
+# Ignore log files
+*.log
+
+# Ignore environment-specific files
+.env
+
+# Ignore package lock files
+package-lock.json
+yarn.lock
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore coverage reports (if you have tests and generate coverage reports)
+/coverage/
+
+# Ignore build artifacts from CI/CD
+/build/
